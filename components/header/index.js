@@ -19,7 +19,11 @@ function Header() {
   function MobileMenu() {
     return (
       <Modal>
-        <p className={styles.closeButton} onClick={handleNav}>
+        <p
+          className={styles.closeButton}
+          onClick={handleNav}
+          data-test-id={"closeIcon"}
+        >
           X
         </p>
         <h1 className={styles.heading}>Menu</h1>
@@ -43,7 +47,11 @@ function Header() {
 
   function MenuIcon() {
     return (
-      <div onClick={handleNav} className={styles.menuContainer}>
+      <div
+        onClick={handleNav}
+        className={styles.menuContainer}
+        data-test-id={"menuIcon"}
+      >
         <div />
         <div />
         <div />

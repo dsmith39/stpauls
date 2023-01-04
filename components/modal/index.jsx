@@ -11,7 +11,9 @@ function Modal({ children }) {
     <>
       {createPortal(<Backdrop />, document.getElementById("backdrop-root"))}
       {createPortal(
-        <aside className={styles.modal}>{children}</aside>,
+        <aside className={styles.modal} data-test-id={"modal"}>
+          {children}
+        </aside>,
         document.getElementById("overlay-root")
       )}
     </>
