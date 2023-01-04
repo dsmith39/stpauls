@@ -1,16 +1,16 @@
+import React from "react";
 import Head from "next/head";
-import Header from "../components/header";
-import Container from "../components/container";
-import styles from "../styles/Home.module.scss";
+import Container from "../../components/container";
+import Header from "../../components/header";
 
-export default function Home() {
+export default function Believe() {
   return (
     <Container>
       <Head>
-        <title>{"St. Paul's Community Church"}</title>
+        <title>{"St. Paul's Community Church Beliefs"}</title>
         <meta
           name="description"
-          content="St. Paul's Community Church in Lakewood, Colorado Worshiping Jesus Christ"
+          content="The Beliefs of St. Pauls Community Church in Lakewood, Colorado"
         />
         <meta
           name="keywords"
@@ -18,9 +18,9 @@ export default function Home() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <main className={styles.main}>
+      <main>
         <Header />
-        <h1>Landing</h1>
+        <h1>Beliefs</h1>
       </main>
     </Container>
   );

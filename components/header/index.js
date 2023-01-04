@@ -31,14 +31,26 @@ function Header() {
           <Link onClick={handleNav} href={"/"} className={styles.link}>
             Home
           </Link>
-          <Link onClick={handleNav} href={"/projects"} className={styles.link}>
-            Projects
+          <Link onClick={handleNav} href={"/bulletin"} className={styles.link}>
+            Bulletin
           </Link>
-          <Link onClick={handleNav} href={"/about"} className={styles.link}>
-            About
+          <Link onClick={handleNav} href={"/programs"} className={styles.link}>
+            Programs
           </Link>
-          <Link onClick={handleNav} href={"/hire-me"} className={styles.link}>
-            Hire Me!
+          <Link onClick={handleNav} href={"/calendar"} className={styles.link}>
+            Calendar
+          </Link>
+          <Link onClick={handleNav} href={"/events"} className={styles.link}>
+            Events
+          </Link>
+          <Link onClick={handleNav} href={"/believe"} className={styles.link}>
+            We Believe
+          </Link>
+          <Link onClick={handleNav} href={"/outreach"} className={styles.link}>
+            Outreach
+          </Link>
+          <Link onClick={handleNav} href={"/pastor"} className={styles.link}>
+            Pastor
           </Link>
         </nav>
       </Modal>

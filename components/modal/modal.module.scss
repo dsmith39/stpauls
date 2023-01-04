@@ -5,6 +5,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 90vw;
+  height: 100%;
   margin: auto;
   z-index: 100;
   overflow: hidden;
@@ -16,7 +17,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   z-index: 10;
   background: linear-gradient(180deg, rgba(170, 81, 110, 0.9) 0%, #eeedf1 100%);
 }
