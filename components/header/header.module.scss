@@ -1,0 +1,141 @@
+@use "../../styles/variables" as *;
+//Desktop Header
+.headerDesktop {
+  display: none;
+  @include breakpoint(macbookair) {
+    position: sticky;
+    top: 1em;
+    background-color: $navbar-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: calcRem(16);
+  }
+  .link {
+    /* Text Styles */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 58px;
+    line-height: 70px;
+    /* Pinkish */
+    color: $color-primary;
+    /* Positioning */
+    margin-right: 2rem;
+    @include breakpoint(macbookair) {
+      font-size: 2rem;
+    }
+    @include breakpoint(macbookpro14) {
+      font-size: 3.625rem;
+    }
+  }
+  /* Take Margin Off of Last Link */
+  .link:last-child {
+    margin-right: 0;
+  }
+}
+//Mobile Header
+.headerMobile {
+  position: sticky;
+  top: 1em;
+  background-color: $navbar-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  @include breakpoint(macbookair) {
+    display: none;
+  }
+  h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 0.825rem;
+    display: flex;
+    align-items: center;
+    color: $color-primary;
+    @include breakpoint(iphone8) {
+      font-size: 1.21625rem;
+    }
+    @include breakpoint(iphone8plus) {
+      font-size: 1.3425rem;
+    }
+    @include breakpoint(ipadmini) {
+      font-size: 2.4125rem;
+    }
+    @include breakpoint(ipadpro) {
+      font-size: 3.3075rem;
+    }
+    @include breakpoint(macbookair) {
+      display: none;
+    }
+  }
+}
+//Menu Icon Component
+.menuContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.294375rem;
+  width: 1.1875rem;
+  @include breakpoint(iphone8) {
+    width: 1.355625rem;
+  }
+  @include breakpoint(iphone8plus) {
+    width: 1.496875rem;
+  }
+  @include breakpoint(ipadmini) {
+    width: 2.69rem;
+    gap: 0.5rem;
+  }
+  div {
+    background: $color-primary;
+    height: 0.1875rem;
+    @include breakpoint(iphone8) {
+      height: 0.206875rem;
+    }
+    @include breakpoint(iphone8plus) {
+      height: 0.228125rem;
+    }
+    @include breakpoint(ipadmini) {
+      height: 0.41rem;
+    }
+  }
+}
+//Mobile Menu Component
+.closeButton {
+  font-size: 2rem;
+  text-align: right;
+  color: $color-secondary;
+  @include breakpoint(ipadmini) {
+    font-size: 3rem;
+  }
+}
+.heading {
+  text-align: center;
+  font-weight: 700;
+  font-size: 4rem;
+  color: $color-primary;
+  text-shadow: 0px 0.964582px 0.964582px rgba(0, 0, 0, 0.25);
+  @include breakpoint(ipadmini) {
+    font-size: 5rem;
+  }
+  @include breakpoint(ipadpro) {
+    font-size: 7rem;
+  }
+}
+.navBar {
+  display: flex;
+  flex-direction: column;
+  .link {
+    text-align: center;
+    display: block;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    color: $color-secondary;
+    @include breakpoint(ipadmini) {
+      font-size: 4rem;
+      margin-top: 4rem;
+    }
+    @include breakpoint(ipadpro) {
+      font-size: 5rem;
+    }
+  }
+}
