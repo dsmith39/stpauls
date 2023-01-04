@@ -22,10 +22,13 @@
     /* Positioning */
     margin-right: 2rem;
     @include breakpoint(macbookair) {
-      font-size: 2rem;
+      font-size: 1.7rem;
     }
     @include breakpoint(macbookpro14) {
-      font-size: 3.625rem;
+      font-size: 2.2rem;
+    }
+    @include breakpoint(macbookpro16) {
+      font-size: 2.7rem;
     }
   }
   /* Take Margin Off of Last Link */
@@ -101,8 +104,9 @@
 }
 //Mobile Menu Component
 .closeButton {
+  width: calcRem(24);
   font-size: 2rem;
-  text-align: right;
+  align-self: flex-end;
   color: $color-secondary;
   @include breakpoint(ipadmini) {
     font-size: 3rem;

@@ -31,6 +31,4 @@ yarn-error.log*
 # vercel
 .vercel
 .vscode
-/test-results/
-/playwright-report/
-/playwright/.cache/
+cypress/videos/
