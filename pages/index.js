@@ -39,12 +39,18 @@ export default function Home() {
           <Text type={"p"}>
             Welcome to the St. Paul&apos;s Community Church Website!
           </Text>
-          <section className={styles.downArrow}>
-            <p>See More</p>
-            <a onClick={handleScroll} href={"#newsSection"}>
-              ⌄
-            </a>
-          </section>
+          <figure className={styles.churchImageSection}>
+            <Image
+              alt={"Image of St. Paul's Community Church"}
+              src={"/st_pauls_web.jpg"}
+              width={800}
+              height={600}
+            />
+            <Text type={"figcaption"}>
+              St. Paul&apos;s is a warm, friendly, Christ-centered church in a
+              delightful residential area of Lakewood, Colorado.
+            </Text>
+          </figure>
         </article>
         <article
           ref={newsRef}
@@ -66,15 +72,7 @@ export default function Home() {
         <article className={styles.callToWorship}>
           <Heading type={"h2"}>Our Morning Worship is at 10:00AM</Heading>
         </article>
-        <figure className={styles.churchImageSection}>
-          <Image
-            alt={"Image of St. Paul's Community Church"}
-            src={"/st_pauls_web.jpg"}
-            width={800}
-            height={600}
-          />
-          <Text type={"figcaption"}>St. Paul&apos;s Community Church</Text>
-        </figure>
+
         <article className={styles.beliefSection}>
           <Heading type={"h2"}>We Believe!</Heading>
           <Text type={"p"}>
