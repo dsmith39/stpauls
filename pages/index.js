@@ -11,13 +11,6 @@ import styles from "../styles/Home.module.scss";
 export default function Home() {
   const newsRef = React.useRef(null);
 
-  const handleScroll = (e) => {
-    e.preventDefault();
-    newsRef.current.scrollIntoView({
-      behavior: "smooth",
-      inline: "center",
-    });
-  };
   return (
     <Container>
       <Head>
