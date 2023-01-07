@@ -1,11 +1,11 @@
 @use "sass:math";
 //Variables
-$color-secondary: #596bf0;
-$color-primary: #3a4cf0;
+$color-primary: #8215ef;
+$color-secondary: #3a4cf0;
 $input-text: darken($color-secondary, 10%);
 $input-text-placeholder: darken($color-primary, 60%);
 $button-text: darken($color-primary, 60%);
-$navbar-color: hsla(0, 0%, 100%, 0.294);
+$navbar-color: hsla(0, 0%, 100%, 0.777);
 
 //Functions
 @function calcRem($px) {

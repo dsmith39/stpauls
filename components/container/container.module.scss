@@ -1,5 +1,5 @@
 .container {
-  padding: 0 2rem;
+  padding: 2rem;
   background-image: linear-gradient(
     180deg,
     #ccccff 0%,
@@ -14,4 +14,5 @@
   /* flex-definition */
   display: flex;
   flex-direction: column;
+  text-align: center;
 }

@@ -1,0 +1,65 @@
+@use "../../styles/variables" as *;
+.table {
+  display: table;
+
+  table-layout: auto;
+  min-width: 90%;
+  max-width: 80%;
+  margin: 0 auto;
+  thead {
+    tr {
+      th {
+        color: darken($color: $color-primary, $amount: 20%);
+        font-size: 0.825rem;
+        font-weight: 600;
+        padding: 0.5rem 0;
+        text-decoration: underline;
+        @include breakpoint(iphone8) {
+          font-size: 1rem;
+        }
+        @include breakpoint(iphone8plus) {
+          font-size: 1.3rem;
+        }
+        @include breakpoint(ipadmini) {
+          font-size: 1.7rem;
+        }
+        @include breakpoint(ipadmini) {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+  tbody {
+    tr {
+      td {
+        font-size: 0.65rem;
+        padding: 0.5rem 0;
+        @include breakpoint(iphone8) {
+          font-size: 0.725rem;
+        }
+        @include breakpoint(iphone8plus) {
+          font-size: 0.925rem;
+        }
+        @include breakpoint(ipadmini) {
+          font-size: 1.3rem;
+          padding: 1.5rem 0;
+        }
+        @include breakpoint(ipadpro) {
+          font-size: 1.6rem;
+        }
+      }
+      td:first-child {
+        color: darken($color-secondary, $amount: 10%);
+        font-weight: 600;
+      }
+      td:nth-child(2) {
+        color: darken($color-secondary, $amount: 20%);
+        font-weight: 500;
+      }
+      td:nth-child(3) {
+        color: darken($color-secondary, $amount: 30%);
+        font-weight: 400;
+      }
+    }
+  }
+}

@@ -1,253 +1,65 @@
 @use "./variables" as *;
-.heading {
-  font-style: normal;
-  font-weight: 700;
-  text-align: center;
-  font-size: 2.71125rem;
-  /* Pinkish */
-  color: #ff2b63;
-  text-shadow: 0px 1.21329px 1.21329px rgba(0, 0, 0, 0.25);
-  margin-top: 5.375rem;
 
-  @keyframes heading {
-    0% {
-      position: relative;
-      right: -15rem;
-      opacity: 0;
-    }
-    100% {
-      right: 15rem;
-      opacity: 1;
-    }
-  }
-  @include breakpoint(iphone8) {
-    font-size: 3.17689375rem;
-    text-shadow: 0px 1.42183px 1.42183px rgba(0, 0, 0, 0.25);
-    @keyframes heading {
-      0% {
-        position: relative;
-        right: -30rem;
-        opacity: 0;
-      }
-      100% {
-        right: 30rem;
-        opacity: 1;
-      }
+$sectionPadding: 2rem;
+$subHeadingPadding: 0.5rem;
+
+.headingSection {
+  h1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    @include breakpoint(ipadmini) {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
     }
   }
-  @include breakpoint(iphone8plus) {
-    font-size: 3.5075rem;
-    text-shadow: 0px 1.5697px 1.5697px rgba(0, 0, 0, 0.25);
-  }
-  @include breakpoint(ipadmini) {
-    font-size: 6.3029375rem;
-    text-shadow: 0px 2.82091px 2.82091px rgba(0, 0, 0, 0.25);
-    @keyframes heading {
-      0% {
-        position: relative;
-        right: -60rem;
-        opacity: 0;
-      }
-      100% {
-        right: 60rem;
-        opacity: 1;
-      }
+  p {
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: calcRem(40);
+    @include breakpoint(ipadmini) {
+      line-height: calcRem(45);
+      font-size: 2rem;
     }
-  }
-  @include breakpoint(ipadpro) {
-    font-size: 8.6411875rem;
-    text-shadow: 0px 3.86737px 3.86737px rgba(0, 0, 0, 0.25);
-  }
-  @include breakpoint(macbookair) {
-    font-size: 6.8058125rem;
-    text-shadow: 0px 3.04597px 3.04597px rgba(0, 0, 0, 0.25);
-  }
-  @include breakpoint(macbookpro14) {
-    font-size: calcRem(143);
-    margin-top: 58px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-  @include breakpoint(macbookpro16) {
-    font-size: 9.2760625rem;
-    text-shadow: 0px 4.15153px 4.15153px rgba(0, 0, 0, 0.25);
+    @include breakpoint(ipadpro) {
+      line-height: calcRem(45);
+      font-size: 3rem;
+    }
   }
 }
-
-.subHeading {
-  font-style: normal;
-  font-weight: 400;
-  text-align: center;
-  font-size: 1.64931875rem;
-  /* Bluish */
-  color: #596bf0;
-  text-shadow: 0px 0.606647px 0.90997px rgba(0, 0, 0, 0.25);
-  @keyframes subHeading {
-    0% {
-      position: relative;
-      left: -15rem;
-      opacity: 0;
-    }
-    100% {
-      left: 15rem;
-      opacity: 1;
-    }
-  }
+.newsSection,
+.callToWorship,
+.churchImageSection,
+.beliefSection,
+.whoSection,
+.locationSection,
+.weeklyScheculeSection,
+.eventScheduleSection {
+  padding-top: $sectionPadding;
   @include breakpoint(iphone8) {
-    font-size: 1.9328rem;
-    text-shadow: 0px 0.710914px 1.06637px rgba(0, 0, 0, 0.25);
-    @keyframes subHeading {
-      0% {
-        position: relative;
-        left: -30rem;
-        opacity: 0;
-      }
-      100% {
-        left: 30rem;
-        opacity: 1;
-      }
-    }
+    padding-top: $sectionPadding + 1rem;
   }
-  @include breakpoint(iphone8plus) {
-    font-size: 2.13380625rem;
-    text-shadow: 0px 0.784849px 1.17727px rgba(0, 0, 0, 0.25);
-  }
-  @include breakpoint(ipadmini) {
-    font-size: 3.83466875rem;
-    text-shadow: 0px 1.41045px 2.11568px rgba(0, 0, 0, 0.25);
-    @keyframes subHeading {
-      0% {
-        position: relative;
-        left: -70rem;
-        opacity: 0;
-      }
-      100% {
-        left: 70rem;
-        opacity: 1;
-      }
-    }
-  }
-  @include breakpoint(ipadpro) {
-    font-size: 5.25720625rem;
-    text-shadow: 0px 1.93369px 2.90053px rgba(0, 0, 0, 0.25);
-  }
-  @include breakpoint(macbookair) {
-    font-size: 4.14061875rem;
-    text-shadow: 0px 1.52299px 2.28448px rgba(0, 0, 0, 0.25);
-  }
-  @include breakpoint(macbookpro14) {
-    font-size: 87px;
-    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
-    margin-top: -25px;
-  }
-  @include breakpoint(macbookpro16) {
-    font-size: 5.64348125rem;
-    text-shadow: 0px 2.07576px 3.11365px rgba(0, 0, 0, 0.25);
+  h2 {
+    padding-bottom: $subHeadingPadding;
   }
 }
-
-.produceSection {
-  font-style: normal;
-  font-weight: 400;
-  text-align: center;
-  font-size: 1.4407875rem;
-  /* Pinkish */
-  color: #ff2b63;
-  text-shadow: 0px 1.21329px 1.21329px rgba(0, 0, 0, 0.25);
-  margin-top: 4.375rem;
-  @keyframes produceSection {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
+.googleLink {
+  font-size: 0.825rem;
+  color: $color-primary;
+  font-weight: 300;
+  padding-bottom: 2rem;
   @include breakpoint(iphone8) {
-    font-size: 1.68841875rem;
-    text-shadow: 0px 1.42183px 1.42183px rgba(0, 0, 0, 0.25);
+    font-size: 1rem;
   }
   @include breakpoint(iphone8plus) {
-    font-size: 1.86401875rem;
-    text-shadow: 0px 1.5697px 1.5697px rgba(0, 0, 0, 0.25);
+    font-size: 1.3rem;
   }
   @include breakpoint(ipadmini) {
-    font-size: 3.349825rem;
-    text-shadow: 0px 2.82091px 2.82091px rgba(0, 0, 0, 0.25);
-  }
-  @include breakpoint(ipadpro) {
-    font-size: 4.59250625rem;
-    text-shadow: 0px 3.86737px 3.86737px rgba(0, 0, 0, 0.25);
-  }
-  @include breakpoint(macbookair) {
-    font-size: 3.61709375rem;
-    text-shadow: 0px 3.04597px 3.04597px rgba(0, 0, 0, 0.25);
-  }
-  @include breakpoint(macbookpro14) {
-    margin-top: 100px;
-    margin-bottom: 50px;
-    font-size: 76px;
-  }
-  @include breakpoint(macbookpro16) {
-    font-size: 4.9299375rem;
-    text-shadow: 0px 4.15153px 4.15153px rgba(0, 0, 0, 0.25);
+    font-size: 1.7rem;
   }
 }
-.animatedSection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-  font-style: normal;
-  font-weight: 400;
-  text-align: center;
-  font-size: 1.6872375rem;
-  /* Bluish */
-  color: #596bf0;
-  text-shadow: 0px 1.21329px 1.21329px rgba(0, 0, 0, 0.25);
-  margin-top: 1.5rem;
-  @keyframes animatedSection {
-    0% {
-      opacity: 0;
-      margin-bottom: -20rem;
-    }
-    100% {
-      opacity: 1;
-      margin-bottom: 0;
-    }
+.weeklyScheduleSection,
+.eventScheduleSection {
+  table {
+    margin-top: 1rem;
   }
-  @include breakpoint(iphone8) {
-    font-size: 1.97723125rem;
-    text-shadow: 0px 1.42183px 1.42183px rgba(0, 0, 0, 0.25);
-  }
-  @include breakpoint(iphone8plus) {
-    font-size: 2.1828625rem;
-    text-shadow: 0px 1.5697px 1.5697px rgba(0, 0, 0, 0.25);
-  }
-  @include breakpoint(ipadmini) {
-    font-size: 3.922825rem;
-    text-shadow: 0px 2.82091px 2.82091px rgba(0, 0, 0, 0.25);
-  }
-  @include breakpoint(ipadpro) {
-    font-size: 5.3780625rem;
-    text-shadow: 0px 3.86737px 3.86737px rgba(0, 0, 0, 0.25);
-  }
-  @include breakpoint(macbookair) {
-    font-size: 4.23580625rem;
-    text-shadow: 0px 3.04597px 3.04597px rgba(0, 0, 0, 0.25);
-  }
-  @include breakpoint(macbookpro14) {
-    font-size: 89px;
-  }
-  @include breakpoint(macbookpro16) {
-    font-size: 5.77321875rem;
-    text-shadow: 0px 4.15153px 4.15153px rgba(0, 0, 0, 0.25);
-  }
-}
-
-.animatedWords {
-  font-style: italic;
-  font-weight: 800;
-  text-decoration-line: underline;
-  /* Bluish */
-  color: #596bf0;
 }
