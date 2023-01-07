@@ -39,12 +39,11 @@
 //Mobile Header
 .headerMobile {
   position: sticky;
-  top: 1em;
+  top: calcRem(10);
   background-color: $navbar-color;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
   @include breakpoint(macbookair) {
     display: none;
   }
