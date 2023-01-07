@@ -1,7 +1,7 @@
 @use "../../styles/variables" as *;
 .table {
   display: table;
-  font-size: 0.65rem;
+
   table-layout: auto;
   width: 100%;
   thead {
@@ -12,6 +12,9 @@
         font-weight: 600;
         padding: 0.5rem 0;
         text-decoration: underline;
+        @include breakpoint(iphone8) {
+          font-size: 1rem;
+        }
       }
     }
   }
@@ -30,7 +33,11 @@
         font-weight: 400;
       }
       td {
+        font-size: 0.65rem;
         padding: 0.5rem 0;
+        @include breakpoint(iphone8) {
+          font-size: 0.725rem;
+        }
       }
     }
   }
