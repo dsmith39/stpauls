@@ -15,6 +15,9 @@
         @include breakpoint(iphone8) {
           font-size: 1rem;
         }
+        @include breakpoint(iphone8plus) {
+          font-size: 1.3rem;
+        }
       }
     }
   }
@@ -37,6 +40,9 @@
         padding: 0.5rem 0;
         @include breakpoint(iphone8) {
           font-size: 0.725rem;
+        }
+        @include breakpoint(iphone8plus) {
+          font-size: 0.925rem;
         }
       }
     }
