@@ -1,10 +1,14 @@
 import React from "react";
 import styles from "./CustomTable.module.scss";
 
+const Table = ({ children }) => {
+  return <table className={styles.table}>{children}</table>;
+};
+
 export default function CustomTable({ type }) {
   if (type === "eventSchedule") {
     return (
-      <table className={styles.table}>
+      <Table>
         <thead>
           <tr>
             <th>Day</th>
@@ -52,24 +56,21 @@ export default function CustomTable({ type }) {
           </tr>
           <tr>
             <td>2nd Wednesday </td>
-            <td>
-              6:00pm
-              <br />
-              7:00pm
-            </td>
-            <td>
-              Church and Ministry Meeting
-              <br />
-              Church Council Meeting
-            </td>
+            <td>6:00pm</td>
+            <td>Church and Ministry Meeting</td>
+          </tr>
+          <tr>
+            <td>2nd Wednesday</td>
+            <td>7:00pm</td>
+            <td>Church Council Meeting</td>
           </tr>
         </tbody>
-      </table>
+      </Table>
     );
   }
   if (type === "weeklyService") {
     return (
-      <table className={styles.table}>
+      <Table>
         <thead>
           <tr>
             <th>Day</th>
@@ -94,7 +95,7 @@ export default function CustomTable({ type }) {
             <td>Morning Bible Study</td>
           </tr>
         </tbody>
-      </table>
+      </Table>
     );
   }
 }

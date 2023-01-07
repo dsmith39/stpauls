@@ -4,8 +4,31 @@
   font-size: 0.65rem;
   table-layout: auto;
   width: 100%;
+  thead {
+    tr {
+      th {
+        color: darken($color: $color-primary, $amount: 20%);
+        font-size: 0.825rem;
+        font-weight: 600;
+        padding: 0.5rem 0;
+        text-decoration: underline;
+      }
+    }
+  }
   tbody {
     tr {
+      td:first-child {
+        color: darken($color-secondary, $amount: 10%);
+        font-weight: 600;
+      }
+      td:nth-child(2) {
+        color: darken($color-secondary, $amount: 20%);
+        font-weight: 500;
+      }
+      td:nth-child(3) {
+        color: darken($color-secondary, $amount: 30%);
+        font-weight: 400;
+      }
       td {
         padding: 0.5rem 0;
       }
