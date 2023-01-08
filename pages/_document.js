@@ -5,8 +5,10 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <body>
-        <div id="backdrop-root"></div>
-        <div id="overlay-root"></div>
+        <div id="backdrop-root">
+          <div id="overlay-root"></div>
+        </div>
+
         <Main />
         <NextScript />
       </body>

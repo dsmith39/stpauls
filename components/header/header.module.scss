@@ -128,6 +128,7 @@
 .navBar {
   display: flex;
   flex-direction: column;
+  gap: -2rem;
   .link {
     text-align: center;
     display: block;
@@ -139,11 +140,10 @@
       margin-top: 1rem;
     }
     @include breakpoint(ipadmini) {
-      font-size: 3rem;
-      margin-top: 2rem;
+      font-size: 2.5rem;
     }
     @include breakpoint(ipadpro) {
-      font-size: 5rem;
+      font-size: 3rem;
     }
   }
 }
